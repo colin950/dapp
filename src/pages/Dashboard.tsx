@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import UpbitPriceTable from '@/components/UpbitPrice'
+import Transfer from '@/components/Transfer'
 
 const tabs = ['시세', '잔액', 'NFT', '토큰 전송'] as const
 type Tab = typeof tabs[number]
@@ -54,7 +55,7 @@ const Dashboard = () => {
           <section>
             <h2 className="text-3xl font-semibold mb-4">📤 토큰 전송</h2>
             {/* 토큰 전송 폼 컴포넌트 */}
-            <div>전송 폼 영역</div>
+            <Transfer />
           </section>
         )}
       </main>

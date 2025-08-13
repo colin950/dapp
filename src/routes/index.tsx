@@ -3,6 +3,7 @@ import Landing from '@/pages/Landing'
 import Dashboard from '@/pages/Dashboard'
 import Layout from '@/components/Layout'
 import ProtectedRoute from '@/components/ProtectedRoute.tsx'
+import STO from '@/pages/STO.tsx'
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,14 @@ const AppRoutes = () => {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="sto"
+          element={
+            <ProtectedRoute>
+              <STO />
             </ProtectedRoute>
           }
         />

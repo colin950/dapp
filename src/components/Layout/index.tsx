@@ -3,6 +3,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom'
 import '@rainbow-me/rainbowkit/styles.css'
 import { useAccount } from 'wagmi'
 import { useEffect } from 'react'
+import HeaderTabs from '@/components/HeaderTabs'
 
 const Layout = () => {
   const { isConnected } = useAccount()
@@ -37,6 +38,10 @@ const Layout = () => {
           />
         </div>
       </header>
+
+      <div className="px-4">
+        <HeaderTabs />
+      </div>
 
       <main className="flex-1 flex flex-col items-start p-4 overflow-auto">
         <Outlet />

@@ -14,3 +14,6 @@ npx vite
 [시세 조회]
 
 ![Ticker Image](src/assets/ticker.png)
+
+[erc 1400 test]
+![erc1400 Image](src/assets/test3.png)
